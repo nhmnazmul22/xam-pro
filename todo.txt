@@ -1,0 +1,43 @@
+Components:
+Home Page:
+	1) Navbar
+	2) Header
+	3) Counter
+	4) feature
+	5) course
+	6) service
+	7) createPackage
+	8) footer
+	9) BottomFooter
+Login Page:
+	1) loginForm 
+	2) form
+Registration Page:
+	1) registrationForm 
+	2) form         
+my-package Page:
+	1) Navbar
+	2) packages
+	3) package
+		1)timing
+	4) bottom footer
+create package page:
+	1) Navbar
+	2) packageInfo
+	3) listOfService
+	4) packageFormat
+	5) bottom footer 
+cart page:
+	1) Navbar
+	2) carts
+  	3) cart
+	4) bottom footer 
+dashboard:
+	1) Navbar
+        2) draftPackages
+	3) ongoingPackages
+	4) Packages
+	5) result
+	5) bottom footer
+
+	     

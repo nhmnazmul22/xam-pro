@@ -1,68 +1,51 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Tailwind Css Customization Start*/
+@theme {
+  --color-primary-blue: #0052cc;
+  --color-slate-gray: #74788d;
+  --color-dark-slate: #253642;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@layer {
+  .container {
+    @apply px-5 2xl:px-32 mx-auto;
+  }
+  .menuItem {
+    @apply px-3 py-2 text-white;
+  }
+  .menuText {
+    @apply flex gap-2 items-center text-slate-gray text-[15px] group-hover:text-white duration-300;
+  }
+  .subMenuText {
+    @apply text-dark-slate text-[15px] px-2 py-2 hover:bg-primary-blue hover:text-white duration-300 cursor-pointer;
+  }
+  .menuIcon {
+    @apply text-slate-gray group-hover:text-white duration-300;
+  }
 }
-a:hover {
-  color: #535bf2;
-}
+
+/* Tailwind Css Customization End*/
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Sora", serif;
+  background-color: #f8f8fb;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.text-after-effect {
+  position: relative;
+  z-index: 1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.text-after-effect::after {
+  content: "";
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  background-color: #f1b44c;
 }
