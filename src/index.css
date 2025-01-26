@@ -50,3 +50,15 @@ body {
   z-index: -1;
   background-color: #f1b44c;
 }
+
+.addToCardBtn {
+  padding: 17px 30px !important;
+}
+
+.service {
+  background-image: url(./assets/images/BG.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 624px;
+}

@@ -3,25 +3,21 @@ export type Feature = [
   {
     icon: string;
     title: string;
-    description:string;
-    btnText: string;
+    description: string;
   },
   {
     icon: string;
     title: string;
-    description:string;
-    btnText: string;
+    description: string;
   },
   {
     icon: string;
     title: string;
-    description:string;
-    btnText: string;
+    description: string;
   },
   {
     icon: string;
     title: string;
-    description:string;
-    btnText: string;
+    description: string;
   }
-]
+];

@@ -1,6 +1,6 @@
 function Counter() {
   return (
-    <div className="container md:mt-[-6%] relative z-50">
+    <div className="container md:mt-[-70px] relative z-50">
       <div className="bg-white flex flex-wrap gap-5 flex-row justify-center sm:justify-between items-center min-h-[250px] px-10 md:px-20 py-10 text-center md:shadow-lg rounded-b-3xl rounded-bl-3xl md:rounded-3xl">
         <div className="flex flex-col gap-3">
           <h3 className="text-[28px] sm:text-[44px] md:text-[60px] text-dark-slate font-semibold">
