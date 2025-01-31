@@ -1,12 +1,10 @@
+import { FaRegBookmark, FaRegClock, FaStar } from "react-icons/fa";
 import CourseImg from "../../assets/images/package_banner.jpg";
-import { FaRegBookmark } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
-import { FaRegClock } from "react-icons/fa";
 import Button from "../Common/Button";
 
 const Course = () => {
   return (
-    <div className="flex-1 lg:max-w-[400px] bg-white rounded-3xl p-5">
+    <div className=" bg-white rounded-3xl p-5">
       <div className="relative">
         <img className="rounded-tr-3xl rounded-tl-3xl" src={CourseImg} alt="" />
         <div className="bg-white w-[40px] h-[40px] flex justify-center items-center absolute top-5 right-5 rounded">
@@ -43,7 +41,7 @@ const Course = () => {
             </div>
           </div>
           <div className="mt-4">
-            <h3 className="text-dark-slate text-[20px] font-semibold">
+            <h3 className="text-dark-slate text-xl font-semibold">
               Writing (General)
             </h3>
             <ul className="mt-3 flex flex-col gap-2">
@@ -55,7 +53,7 @@ const Course = () => {
                   viewBox="0 0 12 12"
                   fill="none"
                 >
-                  <g clip-path="url(#clip0_1_3930)">
+                  <g clipPath="url(#clip0_1_3930)">
                     <path
                       d="M11.6484 4.11572H10.8984C10.7043 4.11572 10.5469 4.27313 10.5469 4.46728V9.62353C10.5469 9.81769 10.7043 9.97509 10.8984 9.97509H11.6484C11.8426 9.97509 12 9.81769 12 9.62353V4.46728C12 4.27313 11.8426 4.11572 11.6484 4.11572Z"
                       fill="#0052CC"
@@ -116,7 +114,7 @@ const Course = () => {
               text="Add to cart"
               classes="text-white bg-primary-blue addToCardBtn"
             />
-            <div className="flex gap-3">
+            <div className="flex flex-wrap justify-end gap-3">
               <p className="text-lg text-[#0052CC] font-semibold line-through">
                 Tk. 400
               </p>

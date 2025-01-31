@@ -2,7 +2,9 @@ import Layout from "../Layout/Layout";
 import Counter from "./Counter";
 import Courses from "./Courses";
 import Features from "./Features";
+import Footer from "./Footer";
 import Header from "./Header";
+import PackageBanner from "./PackageBanner";
 import Services from "./Services";
 
 function HomeContent() {
@@ -13,6 +15,8 @@ function HomeContent() {
       <Features />
       <Courses />
       <Services />
+      <PackageBanner />
+      <Footer />
     </Layout>
   );
 }

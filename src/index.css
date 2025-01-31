@@ -10,8 +10,8 @@
 }
 
 @layer {
-  .container {
-    @apply px-5 2xl:px-32 mx-auto;
+  .main-container {
+    @apply px-8 lg:px-20 2xl:px-39 mx-auto;
   }
   .menuItem {
     @apply px-3 py-2 text-white;
@@ -60,5 +60,16 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 624px;
+}
+
+@media screen and (max-width: 1260px) {
+  .addToCardBtn {
+    padding: 10px 20px !important;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .addToCardBtn {
+    padding: 17px 30px !important;
+  }
 }

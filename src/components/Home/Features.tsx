@@ -3,8 +3,8 @@ import FeatureImg_1 from "../../assets/images/feature-1.svg";
 import FeatureImg_2 from "../../assets/images/feature-2.svg";
 import FeatureImg_3 from "../../assets/images/feature-3.svg";
 import FeatureImg_4 from "../../assets/images/feature-4.svg";
-import Button from "../Common/Button";
 import { Feature } from "../../types/types";
+import Button from "../Common/Button";
 
 // Features Object
 const features: Feature = [
@@ -37,7 +37,7 @@ const features: Feature = [
 function Features() {
   return (
     <div className="py-10 mt-30">
-      <div className="container shadow-[5px_5px_64px_160px_#0052cc07] bg-[#0052cc07] rounded-[20%]">
+      <div className="main-container shadow-[5px_5px_64px_160px_#0052cc07] bg-[#0052cc07] rounded-[20%]">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 bg-primary-blue rounded-[24px] min-h-[384px] flex justify-start p-10 lg:px-20 lg:py-10 items-center">
             <div className="max-w-[533px]">
@@ -51,8 +51,11 @@ function Features() {
             </div>
           </div>
 
-          {features.map((feature) => (
-            <div className="bg-white p-8 xl:p-10 rounded-[24px] shadow-shadow-[2px_2px_0px_10px_#0052CC0F]">
+          {features.map((feature, index) => (
+            <div
+              key={index.toString()}
+              className="bg-white p-8 xl:p-10 rounded-[24px] shadow-shadow-[2px_2px_0px_10px_#0052CC0F]"
+            >
               <div className="mb-5">
                 <img
                   className="w-[80px] h-auto lg:w-auto"

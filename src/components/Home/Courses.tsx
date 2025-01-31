@@ -1,13 +1,14 @@
-import Course from "./Course";
 import { BsArrowRight } from "react-icons/bs";
+import Course from "./Course";
+
 const Courses = () => {
   return (
     <div className="bg-[#e6eefa] py-24 mt-20">
-      <div className="container">
+      <div className="main-container">
         <h3 className="text-center text-[#1E266D] text-4xl lg:text-[44px] xl:text-[51px] font-semibold">
           Some popular courses
         </h3>
-        <div className="flex flex-wrap justify-start items-center mt-24 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-wrap justify-center items-center mt-24 gap-6">
           <Course />
           <Course />
           <Course />

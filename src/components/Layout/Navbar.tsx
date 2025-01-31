@@ -6,7 +6,7 @@ import MobileMenu from "./Navbar/MobileMenu";
 function Navbar() {
   return (
     <div className="bg-white min-h-[80px] py-2">
-      <div className="container">
+      <div className="main-container">
         <div className="flex justify-between items-center">
           <img
             className="w-[100px] md:w-[128px] h-auto"
